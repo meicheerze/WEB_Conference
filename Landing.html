@@ -395,77 +395,6 @@
         transform: translateY(50px);
         transition-delay: 0.3s;
       }
-
-      /* .timer-section {
-      padding: 4rem 2rem;
-      background: linear-gradient(45deg, rgba(255, 193, 7, 0.05), rgba(255, 193, 7, 0.1));
-      text-align: center;
-    }
-
-    .timer-container {
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-
-    .timer-heading {
-      font-size: 2rem;
-      color: #1a1a1a;
-      margin-bottom: 2rem;
-      font-weight: bold;
-    }
-
-    .countdown {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .countdown-item {
-      background: white;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-      min-width: 150px;
-      transition: transform 0.3s ease;
-    }
-
-    .countdown-item:hover {
-      transform: translateY(-5px);
-    }
-
-    .countdown-number {
-      font-size: 3.5rem;
-      font-weight: bold;
-      color: #FFC107;
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-
-    .countdown-label {
-      font-size: 1rem;
-      color: #666;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    @media (max-width: 768px) {
-      .countdown {
-        gap: 1rem;
-      }
-      
-      .countdown-item {
-        min-width: 120px;
-        padding: 1.5rem;
-      }
-      
-      .countdown-number {
-        font-size: 2.5rem;
-      }
-      
-      .countdown-label {
-        font-size: 0.9rem;
-      } */
 }
   </style>
 </head>
@@ -534,30 +463,6 @@
     </div>
   </section>
 
-  <!-- /* <section class="timer-section"></section>
-    <div class="timer-container">
-      <h2 class="timer-heading">Time Until Conference Begins</h2>
-      <div class="countdown">
-        <div class="countdown-item">
-          <span id="days" class="countdown-number">00</span>
-          <span class="countdown-label">Days</span>
-        </div>
-        <div class="countdown-item">
-          <span id="hours" class="countdown-number">00</span>
-          <span class="countdown-label">Hours</span>
-        </div>
-        <div class="countdown-item">
-          <span id="minutes" class="countdown-number">00</span>
-          <span class="countdown-label">Minutes</span>
-        </div>
-        <div class="countdown-item">
-          <span id="seconds" class="countdown-number">00</span>
-          <span class="countdown-label">Seconds</span>
-        </div>
-      </div>
-    </div>
-  </section> */ -->
-
   <div class="scroll-prompt">
     Scroll for more
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -607,44 +512,6 @@
         </div>
       </div>
   </section>
-
-  <!-- /* <script>
-    function updateCountdown() {
-      // Set the conference date - March 15, 2025 00:00:00
-      const conferenceDate = new Date('2025-03-15T00:00:00').getTime();
-      
-      // Update the countdown every second
-      const timer = setInterval(() => {
-        // Get current date and time
-        const now = new Date().getTime();
-        
-        // Find the distance between now and the conference date
-        const distance = conferenceDate - now;
-        
-        // Time calculations for days, hours, minutes and seconds
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        // If the countdown is over, display message and clear interval
-        if (distance < 0) {
-          clearInterval(timer);
-          document.querySelector('.countdown').innerHTML = '<h3>Conference has begun!</h3>';
-          return;
-        }
-        
-        // Display the results with leading zeros
-        document.getElementById('days').textContent = days.toString().padStart(2, '0');
-        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-      }, 1000);
-    }
-
-    // Start countdown when page loads
-    document.addEventListener('DOMContentLoaded', updateCountdown);
-  </script> */ -->
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
